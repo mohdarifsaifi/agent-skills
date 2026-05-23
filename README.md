@@ -286,6 +286,88 @@ Skills bake in best practices from Google's engineering culture — including co
 
 ---
 
+## Enterprise Skills
+
+The following skills extend agent-skills for enterprise-grade software development. They address concerns that arise when building production systems for organizations with compliance, scale, and multi-team requirements.
+
+### architecture-decisions
+
+Documents significant architectural decisions using Architecture Decision Records (ADRs) before implementation begins. Captures context, options considered, decision rationale, and consequences. Creates institutional memory that survives team changes.
+
+**Use when:** choosing technologies, defining system boundaries, making irreversible design decisions.
+
+### compliance-and-regulatory
+
+Builds GDPR, SOC 2 Type II, and ISO 27001 compliance into the development process from day one. Covers data classification, privacy by design, audit logging, access controls, and compliance checklists for all three frameworks.
+
+**Use when:** handling personal data, building for enterprise customers, preparing for security audits.
+
+### ci-cd-pipeline
+
+Enterprise deployment pipeline covering environment strategy (dev/staging/production), deployment patterns (blue-green, rolling, canary), rollback procedures, feature flags, and SLO-gated production releases.
+
+**Use after:** ci-cd-and-automation quality gates pass.
+**Use when:** setting up production deployment for the first time, or improving deployment reliability.
+
+### observability
+
+Systematic visibility into running systems through structured logging, metrics, distributed tracing, and alerting. Covers the four golden signals, SLI/SLO/SLA definitions, runbooks, health checks, and error tracking.
+
+**Use when:** any service going to production needs to be monitored and debugged effectively.
+
+### multi-repo-microservices
+
+Service boundary design, API contracts, communication patterns (sync/async), shared code strategy, inter-service authentication, and deployment coordination for systems spanning multiple services and repositories.
+
+**Use when:** splitting a monolith, adding a new service, or coordinating deployment across multiple repos.
+
+---
+
+## How Enterprise Skills Relate to Core Skills
+
+Enterprise skills work alongside core skills, not instead of them. A typical enterprise feature uses both:
+
+**Core skills handle:**
+- Requirement capture (`spec-driven-development`)
+- Task breakdown (`planning-and-task-breakdown`)
+- Implementation (`incremental-implementation`)
+- Testing (`test-driven-development`)
+- Code quality (`code-review-and-quality`)
+- Security basics (`security-and-hardening`)
+- Shipping (`shipping-and-launch`)
+
+**Enterprise skills add:**
+- Decision documentation (`architecture-decisions`)
+- Regulatory compliance (`compliance-and-regulatory`)
+- Production deployment (`ci-cd-pipeline`)
+- Production monitoring (`observability`)
+- Multi-service coordination (`multi-repo-microservices`)
+
+---
+
+## Using Enterprise Skills in CLAUDE.md
+
+Add enterprise skills to your project's CLAUDE.md alongside core skills:
+
+```markdown
+## Enterprise Skills
+
+Read and follow these skills for enterprise requirements:
+
+### Before implementation
+- ~/agent-skills/skills/architecture-decisions/SKILL.md
+- ~/agent-skills/skills/compliance-and-regulatory/SKILL.md
+
+### During build
+- ~/agent-skills/skills/multi-repo-microservices/SKILL.md
+
+### Before production
+- ~/agent-skills/skills/ci-cd-pipeline/SKILL.md
+- ~/agent-skills/skills/observability/SKILL.md
+```
+
+---
+
 ## Contributing
 
 Skills should be **specific** (actionable steps, not vague advice), **verifiable** (clear exit criteria with evidence requirements), **battle-tested** (based on real workflows), and **minimal** (only what's needed to guide the agent).
