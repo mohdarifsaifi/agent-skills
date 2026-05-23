@@ -290,24 +290,11 @@ Skills bake in best practices from Google's engineering culture — including co
 
 The following skills extend agent-skills for enterprise-grade software development. They address concerns that arise when building production systems for organizations with compliance, scale, and multi-team requirements.
 
-### architecture-decisions
-
-Documents significant architectural decisions using Architecture Decision Records (ADRs) before implementation begins. Captures context, options considered, decision rationale, and consequences. Creates institutional memory that survives team changes.
-
-**Use when:** choosing technologies, defining system boundaries, making irreversible design decisions.
-
 ### compliance-and-regulatory
 
 Builds GDPR, SOC 2 Type II, and ISO 27001 compliance into the development process from day one. Covers data classification, privacy by design, audit logging, access controls, and compliance checklists for all three frameworks.
 
 **Use when:** handling personal data, building for enterprise customers, preparing for security audits.
-
-### ci-cd-pipeline
-
-Enterprise deployment pipeline covering environment strategy (dev/staging/production), deployment patterns (blue-green, rolling, canary), rollback procedures, feature flags, and SLO-gated production releases.
-
-**Use after:** ci-cd-and-automation quality gates pass.
-**Use when:** setting up production deployment for the first time, or improving deployment reliability.
 
 ### observability
 
@@ -337,9 +324,7 @@ Enterprise skills work alongside core skills, not instead of them. A typical ent
 - Shipping (`shipping-and-launch`)
 
 **Enterprise skills add:**
-- Decision documentation (`architecture-decisions`)
 - Regulatory compliance (`compliance-and-regulatory`)
-- Production deployment (`ci-cd-pipeline`)
 - Production monitoring (`observability`)
 - Multi-service coordination (`multi-repo-microservices`)
 
@@ -355,14 +340,12 @@ Add enterprise skills to your project's CLAUDE.md alongside core skills:
 Read and follow these skills for enterprise requirements:
 
 ### Before implementation
-- ~/agent-skills/skills/architecture-decisions/SKILL.md
 - ~/agent-skills/skills/compliance-and-regulatory/SKILL.md
 
 ### During build
 - ~/agent-skills/skills/multi-repo-microservices/SKILL.md
 
 ### Before production
-- ~/agent-skills/skills/ci-cd-pipeline/SKILL.md
 - ~/agent-skills/skills/observability/SKILL.md
 ```
 

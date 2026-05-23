@@ -484,4 +484,3 @@ If a PR touches personal data and violates any rule above, it does not merge.
 - For API design that avoids unnecessary PII exposure, see `skills/api-and-interface-design/SKILL.md` (`api-and-interface-design`)
 - For security controls that overlap with compliance, see `skills/security-and-hardening/SKILL.md` (`security-and-hardening`)
 - For compliance sign-off before release, see `skills/shipping-and-launch/SKILL.md` (`shipping-and-launch`)
-- For documenting compliance-driven architectural decisions, see `skills/architecture-decisions/SKILL.md` (`architecture-decisions`)

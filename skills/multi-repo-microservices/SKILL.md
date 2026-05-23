@@ -458,10 +458,8 @@ Is the monolith actually causing problems?
 
 ## See Also
 
-- For ADRs on service boundary and technology decisions, see `skills/architecture-decisions/SKILL.md` (`architecture-decisions`) — service boundaries are irreversible architectural decisions that require documented rationale
 - For API design standards for service interfaces, see `skills/api-and-interface-design/SKILL.md` (`api-and-interface-design`)
 - For distributed tracing and per-service instrumentation, see `skills/observability/SKILL.md` (`observability`)
-- For independent deployment pipelines per service, see `skills/ci-cd-pipeline/SKILL.md` (`ci-cd-pipeline`)
 - For data ownership boundaries that simplify compliance, see `skills/compliance-and-regulatory/SKILL.md` (`compliance-and-regulatory`)
 - For API versioning and contract deprecation procedures, see `skills/deprecation-and-migration/SKILL.md` (`deprecation-and-migration`)
 - For inter-service authentication patterns, see `skills/security-and-hardening/SKILL.md` (`security-and-hardening`)

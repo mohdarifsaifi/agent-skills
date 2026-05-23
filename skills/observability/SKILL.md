@@ -360,7 +360,7 @@ Every unhandled exception in production must be captured with full context. Log 
 - Release version: which deployment introduced the error
 - Frequency: is this a new error or an existing one that suddenly spiked?
 
-**Triage rule:** new errors in production after a deployment are caused by the deployment until proven otherwise. Check error tracking immediately after every production deployment (see Stage 7 in `ci-cd-pipeline`).
+**Triage rule:** new errors in production after a deployment are caused by the deployment until proven otherwise. Check error tracking immediately after every production deployment.
 
 **Tooling options:** Sentry, Bugsnag, Rollbar, Datadog APM. The specific tool matters less than ensuring it is configured before going to production.
 
@@ -536,7 +536,6 @@ fires before users complain. Expand from here.
 
 ## See Also
 
-- For health checks wired into the deployment pipeline, see `skills/ci-cd-pipeline/SKILL.md` (`ci-cd-pipeline`) — Stage 6 and 7 depend on `/health` and post-deploy smoke tests
 - For compliance requirements that overlap with audit logging, see `skills/compliance-and-regulatory/SKILL.md` (`compliance-and-regulatory`) — structured audit logs satisfy SOC 2 CC7.2 and ISO 27001 A.12.4
 - For observability as a pre-launch requirement, see `skills/shipping-and-launch/SKILL.md` (`shipping-and-launch`)
 - For using logs and traces to diagnose production failures, see `skills/debugging-and-error-recovery/SKILL.md` (`debugging-and-error-recovery`)
