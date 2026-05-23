@@ -262,3 +262,5 @@ Before marking an ADR Accepted:
 - For decisions about API shape, see `skills/api-and-interface-design/SKILL.md` (`api-and-interface-design`)
 - For decisions with security implications, see `skills/security-and-hardening/SKILL.md` (`security-and-hardening`)
 - For long-term documentation strategy, see `skills/documentation-and-adrs/SKILL.md` (`documentation-and-adrs`)
+- For adversarial review of ADRs before accepting, see `skills/doubt-driven-development/SKILL.md` (`doubt-driven-development`) — actively try to disprove the decision before committing to it
+- For technology choices that must cite official documentation, see `skills/source-driven-development/SKILL.md` (`source-driven-development`) — every technology choice in an ADR must be grounded in sources, not memory or assumption

@@ -449,3 +449,4 @@ PHASE 6 — Validation (before first production use)
 - For compliance requirements that gate deployments, see `skills/compliance-and-regulatory/SKILL.md` (`compliance-and-regulatory`)
 - For the final launch checklist that uses the pipeline, see `skills/shipping-and-launch/SKILL.md` (`shipping-and-launch`)
 - For architectural decisions about deployment strategy, see `skills/architecture-decisions/SKILL.md` (`architecture-decisions`)
+- For pipeline changes that affect existing deployment contracts, see `skills/deprecation-and-migration/SKILL.md` (`deprecation-and-migration`) — follow the deprecation workflow to avoid breaking dependents
