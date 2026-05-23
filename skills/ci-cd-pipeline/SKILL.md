@@ -1,6 +1,6 @@
 ---
 name: ci-cd-pipeline
-description: Builds automated, tested, repeatable deployment pipelines. Use when setting up a new project, before first production deployment, when manual deployments cause errors, or when deployment frequency or rollback speed needs to improve.
+description: Enterprise deployment pipeline — environment strategy, deployment patterns (blue-green/canary/rolling), rollback procedures, feature flags, and SLO-gated production releases. Use AFTER ci-cd-and-automation quality gates pass. Covers the journey from "merged to main" to "live in production safely."
 ---
 
 # CI/CD Pipeline
@@ -14,6 +14,8 @@ Automate every step between a merged pull request and running production code. A
 CI and CD are separate disciplines that compose into a single workflow. Know which you are building.
 
 ## When to Use
+
+This skill complements `ci-cd-and-automation`. That skill handles quality gates before merge. This skill handles deployment after merge.
 
 Activate this skill when:
 
